@@ -1,10 +1,15 @@
 const logo = document.getElementById('PICLOGO');
 
-console.log("hello world")
+const dog = document.getElementById('dog');
 
-console.log(logo.getAttribute("src"));
+dog.style.color = "red";
 
-if (logo.matches(':hover')) {
-    logo.src = "logoGIF.gif";
-}
+logo.addEventListener("mouseover", (event) => {
+    logo.src="logoGIF.gif";
+
+    setTimeout(() => {
+        logo.src="LOGO.jpg";
+    }, 4000)
+});
+
 
