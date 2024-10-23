@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #263443;
+    background-color: #476077;
+}
+
+a:link, a:visited {
+    text-decoration: none!important;
+    cursor: pointer;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    padding-top: 9%;
+    padding-bottom: 7%;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    font-family: 'Roboto';
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7vw;
+    text-decoration: none;
+}
+
+main a {
+    
+    display: flex;
+    border-radius: 15px;
+    border: 5px solid #9EBAD5;
+    background-color: #8CA5BC;
+    width: 60%;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: min(6vw, 32px);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 1s ease-in-out;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+footer {
+    text-align: center;
+    line-height: 1.2;
+    font-size: 16px;
+    padding-top: 5%;
+    
+    & #con {
+        font-family: "loos-normal";
+        font-weight: medium;
+    }
+    & h2 {
+        font-weight: 100;
+    }
+}
+
+footer .tiktok-embed {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    footer .tiktok-embed {
+        display: block;
+    }
+    main {
+        flex-direction: row;
+        justify-content: center;
+    }
+    main a {
+        width: 20%;
+    }
+}
