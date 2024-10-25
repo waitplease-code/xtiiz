@@ -1,77 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="portfolio_style.css">
+    <link rel="stylesheet" href="styles/portfolio_style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Video, Editor, Xtiiz">
     <meta name="author" content="Xtiiz">
     <meta name="description" content="View Xtiiz's best work">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="6839433.png">
     <title>Xtiiz Portfolio | Video Editor</title>
-    
-    
-</head>
-<body>
-    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://use.typekit.net/ehn5gec.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
     <header>
-    <nav class="menu">
-        <ul class="main_ul">
-            <li class="logo">
-                <a href="#">
-                    <img src="images/LOGO.jpg" alt="Xtiiz Logo" id="PICLOGO">
-                </a>
-            </li>
-            <li><a href="#">Work</a>
-                <ul class="dropdown">
-                    <li><a href="#">Published Work</a></li>
-                    <li><a href="#">Mixed-Media</a></li>
-                    <li><a href="#">Animation</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Shop</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <a id="dog">SERVICES</a>
+            <a>PROJECT FILES & SCENEPACKS</a>
+        </nav>
     </header>
 
-
     <main>
-        <section class="WHO">
-            <h1>Xtiiz</h1>
-            <p1>BLAH BLAH WHO I AM</p1>
+        <section class="who">
+            <div class="logo hidden">
+                <img src="images/xtiizLOGO.png">
+            </div>
+            <div class="work hidden">
+                <a>VIEW MY WORK</a>
+            </div>
+            <div class="info hidden">
+                <h2>Who am I?</h2>
+                <h1>Freelance video editor BLAH BLAH BLAH</h1>
+            </div>
         </section>
-
-        <section class="EXP">
-            <h1>Skills and Experience</h1>
-
-            <section id="timeline">
-                <img src="" alt="timeline">
-            </section>
-            
-            <section id="software">
-                <h2>Software I Use</h2>
+        
+        <section class="skills hidden">
+            <div>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Animation</li>
+                    <li>Motion Graphics</li>
+                    <li>Color Correction</li>
+                    <li>Also fluent in Spanish :)</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Experience</h2>
+                <h3>Fat Pooch Productions</h3>
+                <h3>Started three successful tiktok editing accounts</h3>
+            </div>
+            <div class="software hidden">
+                <h2>Software</h2>
                 <div class="prog">
-                    <img src="images/adobe-after-effects-logo-0.png" alt="Adobe After Effects Logo" id="AE">
-                    <img src="images/Adobe_Illustrator_CC_icon.svg.png" alt="Adobe Illustrator Logo" id="AI">
-                    <img src="images/Kdenlive_new_logo.png" alt="Kden Live Logo" id="KL">
-                    <img src="images/DaVinci_Resolve_Studio.png" alt="DaVinci Resolve Studio Logo" id="DR">
+                    <img src="images/adobe-after-effects-logo-0.png" alt="Adobe After Effects Logo" id="AE" class="soft">
+                    <img src="images/Adobe_Illustrator_CC_icon.svg.png" alt="Adobe Illustrator Logo" id="AI" class="soft">
+                    <img src="images/Kdenlive_new_logo.png" alt="Kden Live Logo" id="KL" class="soft">
+                    <img src="images/DaVinci_Resolve_Studio.png" alt="DaVinci Resolve Studio Logo" id="DR" class="soft">
                 </div>
-            </section>
-
+            </div>
         </section>
 
-        <section class="STATS">
-            <h1>Statistics</h1>
-            
+        <section class="timeline hidden">
+            <div>
+                <h2>Timeline</h2>
+                <img>
+            </div>
+            <div>
+                <h2>Total Statistics</h2>
+            </div>
         </section>
+
+        
     </main>
 
-
-    <script src="script.js"></script>
+    <footer>
+        <h2>Contact:</h2>
+    </footer>
 </body>
+
 </html>

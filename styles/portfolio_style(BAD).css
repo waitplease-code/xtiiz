@@ -107,6 +107,7 @@ nav {
 
 main {
     text-align: center;
+    background-image: url('/images/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg');
 }
 
 .WHO, .EXP, .STATS {
@@ -121,12 +122,12 @@ main {
 
 
 .WHO {
-    background-color: rgb(132, 216, 235);
+    
     
 }
 
 .EXP {
-    background-color: rgb(83, 122, 202);
+    
 }
 
 .EXP #software .prog {
@@ -151,5 +152,5 @@ main {
 }
 
 .STATS {
-    background-color: rgb(45, 115, 220);
+    
 }
