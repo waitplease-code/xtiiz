@@ -22,11 +22,6 @@ a:link, a:visited {
     cursor: pointer;
 }
 
-body {
-    
-}
-
-
 header {
     display: flex;
     justify-content: center;
