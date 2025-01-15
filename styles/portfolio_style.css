@@ -79,22 +79,8 @@ nav a {
 }
 
 main .who {
-    & .logo {
-        align-self: last baseline;
-        img {
-            width: 100%;
-        }
-    }
-
-    & .info {
-        text-align: left;
-        align-self: first baseline;
-    }
-}
-
-main .who {
     display: grid;
-    height: 90vh;
+    height: 95vh;
     grid-template-columns: repeat(5, 10%) 50%;
     grid-template-rows: 45% 10% 45%;
     align-content: center;
@@ -104,6 +90,10 @@ main .who {
     & .logo {
         grid-column: 2 / 5;
         grid-row: 1 / 2;
+        align-self: last baseline;
+        img {
+            width: 100%;
+        }
     }
     & .work {
         grid-column: 6 / 7;
@@ -114,12 +104,19 @@ main .who {
         align-items: center;
         border: 10px solid rgb(245, 245, 245);
         box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+        width: 40%;
+        & img {
+            width: 100%;
+        }
         
     }
     & .info { 
+        text-align: left;
+        align-self: first baseline;
         grid-column: 2 / 6;
         grid-row: 3 / 4;
         min-height: 100%;
+        font-size: clamp(0.6rem, 0.342rem + 0.688vw, 1rem);
     }
 }
 
@@ -233,12 +230,12 @@ footer {
 
 @media (prefers-reduced-motion: no-preference) {
     .hidden {
-      transition: all 1s ease-in-out;
+      transition: opacity, filter, transform 1s ease-in-out;
     }
     .front {
-        transition: all 0.8s ease-out 0.8s;
+        transition: opacity, filter, transform 0.8s ease-out 0.8s;
     }
     .fade {
-        transition: all 0.8s ease-in-out 1.7s;
+        transition: opacity, filter, transform 0.8s ease-in-out 1.7s;
     }
 }
