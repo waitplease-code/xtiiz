@@ -1,7 +1,9 @@
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        entry.target.classList.toggle('show', entry.isIntersecting);
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
     });
 });
 
@@ -28,7 +30,7 @@ document.addEventListener("scroll", (event) => {
             jumper.style.opacity = 0;
             jumper.style.cursor = 'default';
         } else {
-            const value = (timestamp - zero) / 0.5;
+            const value = (timestamp - zero) / 1;
             if (value < 1) {
                 requestAnimationFrame((t) => animate(t));
             } else {
